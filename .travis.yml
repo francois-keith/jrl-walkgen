@@ -4,16 +4,10 @@ compiler:
 - gcc
 env:
   global:
-  - secure: ViEXlUgT66UGxlMPd2ZmZdB9rhFS3rsl6ktJFdyRukdXwZl3/5boy95RJJawFSQ4PmcKX35oZ5Afl7CSuT5r7uiEoFCeZu38b80E3BsuUr4zPgdZS4hI818L/MPhahmN5ravefVbDl+Yf95bWQ79EYj45yvh1dJH+YRBD+ucPDk=
+  - secure: "ViEXlUgT66UGxlMPd2ZmZdB9rhFS3rsl6ktJFdyRukdXwZl3/5boy95RJJawFSQ4PmcKX35oZ5Afl7CSuT5r7uiEoFCeZu38b80E3BsuUr4zPgdZS4hI818L/MPhahmN5ravefVbDl+Yf95bWQ79EYj45yvh1dJH+YRBD+ucPDk="
   - APT_DEPENDENCIES="doxygen doxygen-latex libboost-all-dev libeigen3-dev liblapack-dev libblas-dev gfortran"
   - GIT_DEPENDENCIES="jrl-umi3218/jrl-mathtools jrl-umi3218/jrl-mal laas/abstract-robot-dynamics jrl-umi3218/jrl-dynamics"
   - DEBSIGN_KEYID=5AE5CD75
-  matrix: # this section is for the Debian branch only
-  - DIST=unstable
-  - DIST=saucy
-  - DIST=raring
-  - DIST=quantal
-  - DIST=precise
 notifications:
   email:
   - hpp-source@laas.fr
